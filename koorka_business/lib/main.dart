@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:koorkabusiness/UI.dart';
 import 'package:koorkabusiness/adminPage.dart';
 import 'package:koorkabusiness/clientPage.dart';
 import 'package:koorkabusiness/login_page.dart';
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Koorka',
-      home: new Home(),
+      home: new LoginPage(),
       routes: <String, WidgetBuilder>{
           '/AdminPage' : (BuildContext context)=> new AdminPage(),
           '/ClientPage' : (BuildContext context)=> new ClientPage(username: username,),
